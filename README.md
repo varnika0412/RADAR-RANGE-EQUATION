@@ -56,17 +56,17 @@ It is expressed as:
 ##  Code 
 ```scilab
 
-Gr = 50;
-w = 8;
-sigma = 9;  
+Gr = 60;
+w = 10;
+sigma = 15;  
 pmin = 1e-10;
-Gt = 10;
+Gt = 20;
 Pt = 0.5:0.5:100;   
 Rmax1 = (((Pt .* Gt .* Gr .* (w.^2) .* sigma) ./ (((4 * %pi).^3) .* pmin))).^(1/4);
 subplot(3,1,1);
 plot(Pt, Rmax1);
 
-Pt = 15;
+Pt = 10;
 Gt = 0.1:0.1:9;     
 Rmax2 = (((Pt .* Gt .* Gr .* (w.^2) .* sigma) ./ (((4 * %pi).^3) .* pmin))).^(1/4);
 subplot(3,1,2);
@@ -92,7 +92,8 @@ plot(pmin,Rmax3);
 
 ## Manual Calculation
 
-![WhatsApp Image 2025-11-13 at 12 52 31_00bc96de](https://github.com/user-attachments/assets/4e5118b6-39f1-4ab9-b65e-aebd95d0f8a4)
+<img width="858" height="1280" alt="image" src="https://github.com/user-attachments/assets/fb5f2385-ad38-49b2-92f9-65163ab0e1a1" />
+
 
 
 
